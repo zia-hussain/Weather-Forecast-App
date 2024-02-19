@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// Import the necessary modules
+import "./style.css";
+import { MainProvider } from "./context/MainContext";
+import React from "react";
+import { createRoot } from "react-dom/client"; // Import createRoot from react-dom
+import Container from "./components/Main/Container";
 
+// Define your App component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainProvider>
+      <Container />
+    </MainProvider>
   );
 }
 
+// Use createRoot instead of ReactDOM.render
+createRoot(document.getElementById("root")).render(<App />);
+
+// Export your App component
 export default App;

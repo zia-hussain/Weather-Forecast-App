@@ -4,7 +4,6 @@ import ForecastDayItem from "./ForecastDayItem";
 import convertDate from "../../hooks/useWeather";
 import Title from "./Title";
 import Loading from "../Sidebar/Loading";
-import { list } from "postcss";
 
 function AllForecast() {
   const { weatherData, loading } = useMainContext();

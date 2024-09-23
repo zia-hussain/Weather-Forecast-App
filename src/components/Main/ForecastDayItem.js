@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 function ForecastDayItem({ temp, icon, day, hour }) {
   const weatherIcon = require(`../../icons/${icon}.svg`);

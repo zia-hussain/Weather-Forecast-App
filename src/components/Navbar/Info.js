@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { useMainContext } from "../../context/MainContext";
 import sunIcon from "../../icons/01d.svg";
 import moonIcon from "../../icons/01n.svg";
+import profileImg from "../../../src/assets/images/profile img.jpg";
 
 function Info() {
   const { isDark, setIsDark, isCelcius, setIsCelcius } = useMainContext();
@@ -78,7 +79,7 @@ function Info() {
         <figure className="w-14 h-14 inline-block">
           <img
             className="profile-img rounded-full border-2 border-black dark:border-black w-full h-full object-cover"
-            src="https://media.licdn.com/dms/image/D4D03AQFBRwgmJdOVig/profile-displayphoto-shrink_800_800/0/1700039892056?e=1713398400&v=beta&t=u7ZJU7mPRJfPPXLymG4NZAUOl4hR339-WCbj1QudUD4"
+            src={profileImg}
             alt="Zia Hussain"
           />
         </figure>
